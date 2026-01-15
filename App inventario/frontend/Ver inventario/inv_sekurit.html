@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Inventario Sekurit</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="logo"><a class="inovacar" href="panel.html">INOVA CAR</a></span>
+        </div>
+
+        <div class="navbar-right">
+            <div class="nav-dropdown">
+            <span class="navtext dropdown-btn">Ver Inventario ▾</span>
+
+    <div class="dropdown-menu">
+        <a href="inv_mobil.html">Mobil</a>
+        <a href="inv_castrol.html">Castrol</a>
+        <a href="inv_roshfran.html">Roshfran</a>
+        <a href="inv_sekurit.html">Sekurit</a>
+        <a href="inv_bujias.html">Bujías</a>
+        <a href="inv_cubrevolantes.html">Cubrevolantes</a>
+        <a href="inv_tapetes.html">Tapetes</a>
+        <a href="inv_bardahl.html">Bardahl</a>
+        <a href="inv_parabrisas.html">Parabrisas</a>
+        <a href="inv_filtros.html">Filtros</a>
+    </div>
+</div>
+
+            <span class="navtext"><a href="costeado.html">Costear Inventario</a></span>
+            <button id="logout">Salir</button>
+        </div>
+    </nav>
+
+    <main class="table-wrapper">
+        <h2>Sekurit Cajas</h2>
+
+        <table id="TableSekuritCajas">
+            <thead>
+                <tr>
+                    <th>Viscosidad</th>
+                    <th>Presentacion</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Sekurit Cubetas</h2>
+
+        <table id="TableSekuritCubetas">
+            <thead>
+                <tr>
+                    <th>Viscosidad</th>
+                    <th>Presentacion</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Sekurit Grasas</h2>
+
+        <table id="TableSekuritGrasas">
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Tipo</th>
+                    <th>Presentacion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h2>Sekurit Quimicos</h2>
+
+        <table id="TableSekuritQuimicos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="updateAllSekurit">Actualizar sekurit</button>
+        
+    </main>
+
+    <script src="../Frontend js/sekuritCajas.js"></script>
+    <script src="../Frontend js/sekuritCubetas.js"></script>
+    <script src="../Frontend js/sekuritGrasas.js"></script>
+    <script src="../Frontend js/sekuritQuimicos.js"></script>
+    <script src="../Frontend js/logout.js"></script>
+
+</body>
+</html>

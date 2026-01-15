@@ -1,0 +1,808 @@
+*{
+    box-sizing: border-box;
+    font-family: arial, sans-serif
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+}
+
+.login-wrapper::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(97, 81, 81, 0.3);
+}
+
+.welcome-wrapper{
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f4f7;
+}
+
+.welcome-card{
+    background: white;
+    padding: 50px 60px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.welcome-card h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.welcome-card h2{
+    font-size: 24px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.welcome-card p{
+    color: #555;
+}
+
+.login-wrapper{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/inicio_sesion.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container{
+    background: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #1e40af;
+}
+
+.navbar{
+    height: 80px;
+    background: #18284c;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 24px;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #18284c;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    padding: 8px 0;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    padding: 10px 16px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #5075ac;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+
+
+.inovacar{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.navbar button{
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar button:hover{
+    background: #dc2626;
+}
+
+.table-wrapper {
+    padding: 30px;
+    background: #f2f4f7;
+    min-height: calc(100vh - 80px);
+}
+
+.table-wrapper h2 {
+    margin-bottom: 20px;
+    color: #18284c;
+    display: flex;
+    justify-content: center;
+}
+
+#TableBlend {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableBlend thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableBlend td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableBlend tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableBlend tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableMulti {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableMulti thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableMulti td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableMulti tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableMulti tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableTrc {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableTrc thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableTrc td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableTrc tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableTrc tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableMobilMono {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableMobilMono thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableMobilMono td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableMobilMono tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableMobilMono tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableMobilFull {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableMobilFull thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableMobilFull td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableMobilFull tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableMobilFull tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableMobil1 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableMobil1 thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableMobil1 td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableMobil1 tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableMobil1 tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableMobilDelvac {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableMobilDelvac thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableMobilDelvac td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableMobilDelvac tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableMobilDelvac tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableCastrolEdge {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableCastrolEdge thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableCastrolEdge td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableCastrolEdge tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableCastrolEdge tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableCastrolMineral {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableCastrolMineral thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableCastrolMineral td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableCastrolMineral tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableCastrolMineral tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableCastrolFull {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableCastrolFull thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableCastrolFull td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableCastrolFull tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableCastrolFull tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableRoshfran {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableRoshfran thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableRoshfran td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableRoshfran tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableRoshfran tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableSekuritCajas {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableSekuritCajas thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableSekuritCajas td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableSekuritCajas tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableSekuritCajas tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableSekuritCubetas {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableSekuritCubetas thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableSekuritCubetas td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableSekuritCubetas tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableSekuritCubetas tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableSekuritGrasas {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableSekuritGrasas thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableSekuritGrasas td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableSekuritGrasas tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableSekuritGrasas tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableSekuritQuimicos{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableSekuritQuimicos thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableSekuritQuimicos td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableSekuritQuimicos tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableSekuritQuimicos tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableBujias{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableBujias thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableBujias td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableBujias tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableBujias tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableCubrevolantes{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableCubrevolantes thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableCubrevolantes td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableCubrevolantes tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableCubrevolantes tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableTapetes{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableTapetes thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableTapetes td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableTapetes tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableTapetes tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableBardahl{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableBardahl thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableBardahl td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableBardahl tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableBardahl tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableParabrisas{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableParabrisas thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableParabrisas td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableParabrisas tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableParabrisas tbody tr:hover {
+    background: #f9fafb;
+}
+
+#TableFiltros{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#TableFiltros thead {
+    background: #18284c;
+    color: white;
+}
+
+#TableFiltros td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#TableFiltros tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#TableFiltros tbody tr:hover {
+    background: #f9fafb;
+}
+
+
